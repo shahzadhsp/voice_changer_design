@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:voice_changer_design/git_image.dart';
+import 'package:voice_changer_design/tooltip.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: MyHomePage(),
+      home: tooltip(title: 'hhhh',),
     );
   }
 }
