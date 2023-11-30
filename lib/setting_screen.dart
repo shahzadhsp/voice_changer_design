@@ -26,7 +26,7 @@ class _SettingScreenState extends State<SettingScreen> {
         child: Column(
           children: [
             Container(
-              height: height*0.08,
+              height: height * 0.08,
               decoration: BoxDecoration(
                 color: Colors.white,
                 // borderRadius: BorderRadius.circular(20),
@@ -86,7 +86,7 @@ class _SettingScreenState extends State<SettingScreen> {
                     height: 10,
                   ),
                   Align(
-                     alignment: Alignment.topLeft,
+                    alignment: Alignment.topLeft,
                     child: Text(
                       'Apearance',
                       style: _textStyle,
@@ -109,7 +109,7 @@ class _SettingScreenState extends State<SettingScreen> {
                     height: 10,
                   ),
                   Align(
-                     alignment: Alignment.topLeft,
+                    alignment: Alignment.topLeft,
                     child: Text(
                       'About Us',
                       style: _textStyle,
@@ -131,72 +131,35 @@ class _SettingScreenState extends State<SettingScreen> {
                           //   width: 2,
                           // ),
                         ),
+
+                        /*
+                         Color imageColor;
+                        */
                         child: Padding(
                           padding: const EdgeInsets.all(20.0),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              CustomRow(title: 'Language', icon: Icons.translate),
                               CustomRow(
-                                  title: 'Privacy & Policy', icon: Icons.policy),
-                              CustomRow(title: 'About App', icon: Icons.info),
+                                title: 'Language',
+                                image: 'assets/images/languageSvg.svg',
+                              ),
+                              CustomRow(
+                                  title: 'Privacy & Policy',
+                                  image: 'assets/images/starSvg.svg'),
+                              CustomRow(
+                                  title: 'About App',
+                                  image: 'assets/images/infoSvg.svg'),
                               CustomRow(
                                   title: 'Terms & Conditions',
-                                  icon: Icons.thumb_down_alt),
-                              CustomRow(title: 'Feedback', icon: Icons.feedback),
-                              CustomRow(title: 'Share App', icon: Icons.share),
+                                  image: 'assets/images/historySvg.svg'),
                               CustomRow(
-                                  title: 'Rate us', icon: Icons.rate_review),
-                  
-                              // CustomListTile(
-                              //   leadingIcon: Icons.home,
-                              //   text: 'Language',
-                              //   onTap: () {},
-                              //   textColor: Colors.black,
-                              //   leadingIconColor: Color(0xff7041EE),
-                              // ),
-                              //  CustomListTile(
-                              //   leadingIcon: Icons.home,
-                              //   text: 'Language',
-                              //   onTap: () {},
-                              //   textColor: Colors.black,
-                              //   leadingIconColor: Color(0xff7041EE),
-                              // ),
-                              //  CustomListTile(
-                              //   leadingIcon: Icons.home,
-                              //   text: 'Language',
-                              //   onTap: () {},
-                              //   textColor: Colors.black,
-                              //   leadingIconColor: Color(0xff7041EE),
-                              // ),
-                              //  CustomListTile(
-                              //   leadingIcon: Icons.home,
-                              //   text: 'Language',
-                              //   onTap: () {},
-                              //   textColor: Colors.black,
-                              //   leadingIconColor: Color(0xff7041EE),
-                              // ),
-                              //  CustomListTile(
-                              //   leadingIcon: Icons.home,
-                              //   text: 'Language',
-                              //   onTap: () {},
-                              //   textColor: Colors.black,
-                              //   leadingIconColor: Color(0xff7041EE),
-                              // ),
-                              //  CustomListTile(
-                              //   leadingIcon: Icons.home,
-                              //   text: 'Language',
-                              //   onTap: () {},
-                              //   textColor: Colors.black,
-                              //   leadingIconColor: Color(0xff7041EE),
-                              // ),
-                              //  CustomListTile(
-                              //   leadingIcon: Icons.home,
-                              //   text: 'Language',
-                              //   onTap: () {},
-                              //   textColor: Colors.black,
-                              //   leadingIconColor: Color(0xff7041EE),
-                              // ),
+                                  title: 'Feedback',
+                                  image: 'assets/images/feedbackSvg.svg'),
+                              CustomRow(
+                                  title: 'Share App',
+                                  image: 'assets/images/shareSvg.svg'),
+                           
                             ],
                           ),
                         )),
